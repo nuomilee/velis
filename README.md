@@ -71,7 +71,7 @@ velis/
 ├─ requirements.txt
 ├─ run.py
 ├─ src/
-│  └─ ai_desktop_organizer/
+│  └─ velis/
 │     ├─ __init__.py
 │     ├─ app.py
 │     ├─ ai_classifier.py

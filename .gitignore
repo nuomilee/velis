@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build / packaging
+build/
+dist/
+*.spec
+
+# Test / cache
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local debug artifacts
+__check_compile.py
+__compile.txt
+__compile_check.txt
+__py_compile.log
+
+# App local state (outside repo by default, listed here for reference)
+# C:\Users\YoMon\.ai_desktop_organizer\

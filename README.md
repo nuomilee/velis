@@ -189,9 +189,4 @@ Velis 可能会更适合这些人：
 
 ## 推荐社区
 
-<p align="left">
-  <a href="https://linux.do/" rel="nofollow">
-    <img src="https://linux.do/logo-48.svg" alt="Linux.do" width="48" height="48" />
-  </a>
-  <a href="https://linux.do/" rel="nofollow">Linux.do · 开发者交流社区</a>
-</p>
+[Linux.do · 开发者交流社区](https://linux.do/)

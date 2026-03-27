@@ -75,7 +75,7 @@ class MainWindow(QMainWindow):
         hero_layout.setSpacing(10)
         hero_text = QVBoxLayout()
         hero_text.setSpacing(2)
-        title = QLabel('AI桌面整理')
+        title = QLabel('Velis（拾叶）')
         title.setObjectName('heroTitle')
         subtitle = QLabel('更优雅地整理桌面文件与分类盒子')
         subtitle.setObjectName('heroSubtitle')
@@ -659,5 +659,5 @@ class MainWindow(QMainWindow):
             return
         self._save_ui_state()
         self.hide()
-        self.tray.showMessage('AI桌面整理', '已最小化到托盘，可从托盘恢复。', QSystemTrayIcon.Information, 2000)
+        self.tray.showMessage('Velis（拾叶）', '已最小化到托盘，可从托盘恢复。', QSystemTrayIcon.Information, 2000)
         event.ignore()

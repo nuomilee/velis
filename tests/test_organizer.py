@@ -34,7 +34,7 @@ class OrganizerTests(unittest.TestCase):
     def test_organize_moves_files_in_rule_mode(self):
         with tempfile.TemporaryDirectory() as tmp:
             desktop = Path(tmp) / 'desktop'
-            out = desktop / 'AI桌面整理'
+            out = desktop / '拾叶'
             desktop.mkdir(parents=True, exist_ok=True)
             file1 = desktop / '项目方案.docx'
             file2 = desktop / '财务数据.xlsx'
@@ -66,7 +66,7 @@ class OrganizerTests(unittest.TestCase):
     def test_ai_mode_skips_rename_when_ai_fails(self):
         with tempfile.TemporaryDirectory() as tmp:
             desktop = Path(tmp) / 'desktop'
-            out = desktop / 'AI桌面整理'
+            out = desktop / '拾叶'
             desktop.mkdir(parents=True, exist_ok=True)
             file1 = desktop / '三国恋 - 小野来了.flac'
             file1.write_text('a', encoding='utf-8')
@@ -84,7 +84,7 @@ class OrganizerTests(unittest.TestCase):
     def test_ai_mode_uses_ai_name(self):
         with tempfile.TemporaryDirectory() as tmp:
             desktop = Path(tmp) / 'desktop'
-            out = desktop / 'AI桌面整理'
+            out = desktop / '拾叶'
             desktop.mkdir(parents=True, exist_ok=True)
             file1 = desktop / '三国恋 - 小野来了.flac'
             file1.write_text('a', encoding='utf-8')

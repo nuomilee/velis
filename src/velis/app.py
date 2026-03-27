@@ -7,7 +7,7 @@ from .main_window import MainWindow
 
 def run() -> None:
     app = QApplication(sys.argv)
-    app.setApplicationName('AI Desktop Organizer')
+    app.setApplicationName('Velis')
     app.setStyle('Fusion')
     window = MainWindow(app)
     window.show()

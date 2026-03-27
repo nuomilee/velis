@@ -187,6 +187,12 @@ Velis 可能会更适合这些人：
 
 ---
 
-## 友链
+## 灵感社区
 
-- [Linux.do](https://linux.do/)
+<p align="left">
+  <a href="https://linux.do/" target="_blank" rel="noopener noreferrer">
+    <img src="https://linux.do/logo-64.svg" alt="Linux.do" width="64" height="64" />
+  </a>
+</p>
+
+- [Linux.do · 开发者与创意者的交流社区](https://linux.do/)

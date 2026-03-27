@@ -1,11 +1,11 @@
 from pathlib import Path
 
-APP_CONFIG_DIR = Path.home() / '.ai_desktop_organizer'
+APP_CONFIG_DIR = Path.home() / '.velis'
 AI_SETTINGS_PATH = APP_CONFIG_DIR / 'ai_settings.json'
 UI_SETTINGS_PATH = APP_CONFIG_DIR / 'ui_settings.json'
 
-APP_NAME = 'AI Desktop Organizer'
-WORKSPACE_FOLDER_NAME = 'AI桌面整理'
+APP_NAME = 'Velis'
+WORKSPACE_FOLDER_NAME = '拾叶'
 GRID_SIZE = 5
 BOX_MIN_WIDTH = 220
 BOX_MIN_HEIGHT = 180

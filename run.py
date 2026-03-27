@@ -1,4 +1,4 @@
-from src.ai_desktop_organizer.app import run
+from src.velis.app import run
 
 
 if __name__ == "__main__":

@@ -3,8 +3,8 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from src.ai_desktop_organizer.ai_classifier import AIResult, AISettings
-from src.ai_desktop_organizer.organizer import DesktopOrganizer
+from src.velis.ai_classifier import AIResult, AISettings
+from src.velis.organizer import DesktopOrganizer
 
 
 class OrganizerTests(unittest.TestCase):
@@ -25,7 +25,7 @@ class OrganizerTests(unittest.TestCase):
             p = Path(tmp) / '微信 快捷方式.lnk'
             p.write_text('x', encoding='utf-8')
             organizer = DesktopOrganizer(Path(tmp), Path(tmp) / 'out', AISettings(enabled=False))
-            with patch('src.ai_desktop_organizer.organizer.resolve_windows_shortcut', return_value=Path(r'C:\Program Files\WeChat\WeChat.exe')):
+            with patch('src.velis.organizer.resolve_windows_shortcut', return_value=Path(r'C:\Program Files\WeChat\WeChat.exe')):
                 category, reason, resolved_target, _, _ = organizer.classify_file(p)
             self.assertEqual(category, '程序快捷方式')
             self.assertEqual(resolved_target, Path(r'C:\Program Files\WeChat\WeChat.exe'))
@@ -50,7 +50,7 @@ class OrganizerTests(unittest.TestCase):
                     return Path(r'C:\Program Files\WeChat\WeChat.exe')
                 return None
 
-            with patch('src.ai_desktop_organizer.organizer.resolve_windows_shortcut', side_effect=fake_resolve):
+            with patch('src.velis.organizer.resolve_windows_shortcut', side_effect=fake_resolve):
                 records = organizer.organize()
 
             self.assertEqual(len(records), 3)

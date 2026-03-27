@@ -2,7 +2,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from src.ai_desktop_organizer.utils import clean_filename, ensure_unique_path
+from src.velis.utils import clean_filename, ensure_unique_path
 
 
 class UtilsTests(unittest.TestCase):
